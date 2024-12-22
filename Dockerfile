@@ -40,6 +40,9 @@ RUN wget -q -O /etc/apk/keys/sgerrand.rsa.pub https://alpine-pkgs.sgerrand.com/s
 RUN apk add gcompat
 RUN apk add jq
 
+# Adding curl to support sending message through webhooks like slack.
+RUN apk add curl
+
 # Add bash for running helper scripts
 RUN apk add bash
 
